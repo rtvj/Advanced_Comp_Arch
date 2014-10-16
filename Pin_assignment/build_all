@@ -1,0 +1,21 @@
+# This is the build all make file.
+
+bench-run.pl --bench spec-cpu2006:int:403.gcc:train --build base --prefix "pin -t /home/students/ruka7894/Checkpoint1A/obj-intel64/checkpoint1A.so -o out_403_gcc.out -l 2000000 --" --copy out_403_gcc.out --log LOG
+
+mv go.sh run_403_gcc.sh
+
+bench-run.pl --bench spec-cpu2006:int:464.h264ref:train --build base --prefix "pin -t /home/students/ruka7894/Checkpoint1A/obj-intel64/checkpoint1A.so -o out_464.h264ref.out -l 2000000 --" --copy out_464.h264ref.out --log LOG
+
+mv go.sh run_464_h264ref.sh
+
+
+bench-run.pl --bench spec-cpu2006:int:401.bzip2:train --build base --prefix "pin -t /home/students/ruka7894/Checkpoint1A/obj-intel64/checkpoint1A.so -o out_bzip.out -l 2000000 --" --copy out_bzip.out --log LOG 
+
+mv go.sh run_bzip.sh
+
+bench-run.pl --bench spec-cpu2006:int:456.hmmer:train --build base --prefix "pin -t /home/students/ruka7894/Checkpoint1A/obj-intel64/checkpoint1A.so -o out_456_hmmer.out -l 2000000 --" --copy out_456_hmmer.out --log LOG
+
+mv go.sh run_456_hmmer.sh
+
+
+

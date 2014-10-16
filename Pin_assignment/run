@@ -1,0 +1,4 @@
+./run_456_hmmer.sh
+./run_bzip.sh
+./run_464_h264ref.sh
+./run_403_gcc.sh
